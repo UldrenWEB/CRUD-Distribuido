@@ -1,0 +1,56 @@
+{
+    "error": {
+        "ConnectionDBError": {
+            "description": "Data base connection error",
+            "code": "1"
+        },
+        "MissingParameters": {
+            "description": "Missing required information",
+            "code": "1"
+        },
+        "ElementNotFound": {
+            "description": "Element not found in db",
+            "code": "1"
+        },
+        "InvalidCredentials": {
+            "description": "Credentials entered are invalid",
+            "code": "1"
+        },
+        "RequestDBError": {
+            "description": "Error in request to db",
+            "code": "1"
+        },
+        "InvalidParameters": {
+            "description": "Invalid parameters",
+            "code": "1"
+        },
+        "Unhautorized": {
+            "description": "Unhautorized access",
+            "code": "1"
+        }
+    },
+    "success": {
+        "RequestSuccess": {
+            "description": "Endpoint request successfully",
+            "code": "0"
+        },
+        "ElementDeleted": {
+            "description": "Element deleted successfully from db",
+            "code": "0"
+        },
+        "ElementUpdated": {
+            "description": "Element updated successfully in db",
+            "code": "0"
+        }
+    },
+    "warning": {
+        "InvalidMethod": {
+            "description": "Request to the endPoint Invalid, try performing a Post",
+            "code": "3"
+        },
+        "NoData": {
+            "description": "No data found",
+            "code": "3"
+        }
+    }
+}

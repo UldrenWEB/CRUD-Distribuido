@@ -1,0 +1,7 @@
+{
+    "insert_product": "INSERT INTO products.product ( product_id, product_de, product_pr, product_sk, product_st) VALUES ( nextval('products.product_product_id_seq'), $1, $2, $3, $4 )",
+    "update_product": "UPDATE products.product SET product_de = COALESCE($1, product_de), product_pr = COALESCE($2, product_pr),  product_sk = COALESCE($3, product_sk), product_st = COALESCE($4, product_st) WHERE product_id = $5",
+    "select_all_product": "SELECT product_id, product_de, product_pr, product_sk, product_st FROM products.product",
+    "select_product": "SELECT product_id, product_de, product_pr, product_sk, product_st FROM products.product WHERE product_de LIKE '%' || $1 || '%'",
+    "delete_product": "DELETE FROM products.product WHERE product_id = $1"
+}

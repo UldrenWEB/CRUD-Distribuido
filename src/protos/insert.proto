@@ -1,0 +1,17 @@
+syntax = "proto3";
+package insert;
+
+service Insert {
+  rpc InsertProduct (InsertRequest) returns (InsertReply) {}
+}
+
+message InsertRequest {
+  string product_de = 1;
+  int32 product_pr = 2;
+  int32 product_sk = 3;
+  bool product_st = 4;
+}
+
+message InsertReply {
+  string message = 1;
+} 

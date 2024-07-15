@@ -1,0 +1,21 @@
+syntax = "proto3";
+package selectAll;
+
+service SelectAll {
+  rpc SelectAllProducts (SelectRequest) returns (SelectReplies) {}
+}
+
+message SelectRequest {
+}
+
+message SelectReply {
+  int32 product_id = 1;
+  string product_de = 2;
+  int32 product_pr = 3;
+  int32 product_sk = 4;
+  bool product_st = 5;
+}
+
+message SelectReplies {
+  repeated SelectReply replies = 1;
+}

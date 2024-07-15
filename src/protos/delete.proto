@@ -1,0 +1,14 @@
+syntax = "proto3";
+package delete;
+
+service Delete{
+    rpc DeleteProduct (DeleteRequest) returns (DeleteReply) {}
+}
+
+message DeleteRequest {
+    int32 id = 1;
+}
+
+message DeleteReply {
+    string message = 1;
+}

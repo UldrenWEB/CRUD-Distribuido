@@ -1,0 +1,18 @@
+syntax = "proto3";
+package update;
+
+service Update{
+    rpc UpdateProduct (UpdateRequest) returns (UpdateReply) {}
+}
+
+message UpdateRequest {
+    string product_de = 1;
+    int32 product_pr = 2;
+    int32 product_sk = 3;
+    bool product_st = 4;
+    int32 product_id = 5;
+}
+
+message UpdateReply {
+    string message = 1;
+}
